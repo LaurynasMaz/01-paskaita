@@ -1,0 +1,89 @@
+#shop{
+  padding: 1rem;
+}
+.icons p{
+  color:grey;
+}
+.icons{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 1rem;
+  gap: var(--gap_1);
+}
+p .link{
+  color: black;
+}
+.cardsalign{
+  display: grid;
+  grid-template: 1fr / repeat(4, 5fr);
+  overflow-x: scroll;
+  column-gap: 1rem;
+  width: 100%;
+}
+.cards{
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.cards .imgbackgraund1{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px 15px 0px 0px;
+}
+.text1{
+    padding: 1em;
+    gap: var(--gap_1);
+    background-color: rgb(172, 161, 161);
+    color: rgb(119, 116, 116);
+    display: grid;
+    grid-template: 0.2fr 1fr / 1fr 1fr;
+    width: 300px;
+    height: 130px;
+   border-radius: 0px 0px 15px 15px ;
+  }
+  .text1 .icon{
+    display: flex;
+  }
+  .text1 .icon svg{
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-main);
+  }
+  .text1 :nth-child(1){
+    color: var(--color-main_2);
+    font-size: smaller;
+  }
+  .text1 :nth-child(2){
+    font-size: smaller;
+  }
+  .text1 :nth-child(3){
+    font-size:larger;
+    color: black;
+  }
+  .text1 :nth-child(4){
+    font-size:larger;
+    color: black;
+  }
+  @media(min-width: 576px ){
+    #shop{
+      padding: 2rem;
+    }
+    .icons{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding-bottom: 1rem;
+      gap: var(--gap_1);
+    }
+    .cardsalign{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      overflow: auto;
+    }
+  }
+  
+  
